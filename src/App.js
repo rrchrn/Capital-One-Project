@@ -7,10 +7,14 @@ function App() {
   //keep track of the current question index
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [isAnswerCorrect, setIsAnswerCorrect] = useState(null);
+  const [score, setScore] = useState(0);
   const currentQuestion = Question[currentQuestionIndex];
 
   const handleAnswerClick = (isCorrect) => {
     setIsAnswerCorrect(isCorrect);
+    if (isCorrect) {
+      setScore(score + 10);
+    }
   };
 
   //clicking the next question
@@ -24,6 +28,9 @@ function App() {
       <header className="App-header">
         <img src={image} className="App-logo" alt="logo" />
         <div className="Title">Financial One Literacy</div>
+        <div className="score-section">
+          <span>Score: {score}</span>
+        </div>
         <div className="question-section">
           <div className="question-count">
             <span>{`Question ${currentQuestionIndex + 1}/${
@@ -38,7 +45,13 @@ function App() {
                   <h2>Correct</h2>
                 ) : (
                   <>
-                    Incorrect<p></p>
+                    <p className="largeText">Incorrect</p>
+                    <p className="mediumText">The correct answer is:</p>
+                    <p className="smallText">
+                      {currentQuestion.answers.map((answer, index) => (
+                        <>{answer.isCorrect && answer.text}</>
+                      ))}
+                    </p>
                   </>
                 )}
               </span>

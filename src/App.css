@@ -29,6 +29,10 @@
   color: #d22e1e;
 }
 
+.score-section{
+  
+}
+
 .question-text {
   height: 70px;
   width: 500px;
@@ -95,4 +99,16 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+p.smallText {
+  font-size: 0.8em;
+  font-weight: 777;
+}
+p.mediumText {
+  font-size: 1em;
+}
+p.largeText {
+  font-size: 1.5em;
+  color: red;
 }
