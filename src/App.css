@@ -3,7 +3,13 @@
 }
 
 .App-logo {
-  height: 20vmin;
+
+  /* height: 10vmin;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; */
+  height: 15vmin;
   text-align: left;
   pointer-events: none;
 }
@@ -24,10 +30,22 @@
 }
 
 .question-text {
-  /* padding-top: 30%; */
-  height: 100px;
-  width: 200px;
-  border: solid 1px black;
+    height: 70px;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
 
 
 }

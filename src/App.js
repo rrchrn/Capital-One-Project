@@ -25,6 +25,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={image} className="App-logo" alt="logo" />
+        
         <div className='question-section'>
           <div className='question-count'>
             <span>{`Question ${currentQuestionIndex + 1}/${Question.length}`}</span>
@@ -54,27 +55,7 @@ function App() {
       </header>
     </div>
   );
-  // return (
-  //   <div className="App">
-  //     <header className="App-header">
-  //       <img src={image} className="App-logo" alt="logo" />
-  //       <div className='question-section'>
-  //         <div className='question-count'>
-  //           <span>{`Question ${currentQuestionIndex + 1}/${Question.length}`}</span>
-  //         </div>
-  //         <div className='question-text'>{currentQuestion.question}</div>
-  //       </div>
-  //       <div className='answer-section'>
-  //         {currentQuestion.answers.map((answer, index) => (
-  //           <button className='Button' key={index}>{answer.text}</button>
-  //         ))}
-  //       </div>
-  //       {currentQuestionIndex < Question.length - 1 && (
-  //         <button onClick={handleNextQuestion}>Next Question</button>
-  //       )}
-  //     </header>
-  //   </div>
-  // );
+  
 
   
 }
