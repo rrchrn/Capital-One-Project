@@ -49,7 +49,7 @@ function App() {
           ))}
         </div>
         {isAnswerCorrect !== null && currentQuestionIndex < Question.length - 1 && (
-          <button onClick={handleNextQuestion}>Next Question</button>
+          <button className= 'next-question' onClick={handleNextQuestion}>Next Question</button>
         )}
       </header>
     </div>
