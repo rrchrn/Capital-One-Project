@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useState } from "react";
 import Question from "./Question";
 import image from "./images/C1Logo.png";
+import ConfettiStuff from "./Confetti";
 
 function App() {
   //keep track of the current question index
@@ -28,8 +29,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {currentQuestionIndex === Question.length - 1 &&
-          currentQuestionIndex > Question.length - 1 * 0.69 && <>Nice Job!!</>}
+        {currentQuestionIndex === Question.length - 1 && (
+          <>
+            Nice Job!!
+            <ConfettiStuff />
+          </>
+        )}
         <img src={image} className="App-logo" alt="logo" />
         <div className="Title">Financial One Literacy</div>
         <div className="score-section">

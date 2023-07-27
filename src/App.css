@@ -3,11 +3,6 @@
 }
 
 .App-logo {
-  /* height: 10vmin;
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none; */
   height: 13vmin;
   text-align: left;
   padding-bottom: 2%;
@@ -15,7 +10,6 @@
 }
 
 .App-header {
-  /* background-color: white; */
   background-color: white;
   min-height: 100vh;
   display: flex;
@@ -31,7 +25,11 @@
 }
 
 .score-section {
-  padding-top: 2%;
+  padding: 0.5%;
+  background-color: #d22e1e;
+  font-weight: 900;
+  color: white;
+  border: 1px black;
 }
 
 .question-text {
@@ -56,17 +54,22 @@
 .Title {
   font-size: 35px;
   font-weight: 600;
+  padding-bottom: 1%;
   color: #004879;
 }
 
 .next-question {
   padding: 10px 20px;
   margin-top: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .question-count {
   padding-top: 5%;
   padding-bottom: 5%;
+  font-weight: 800;
 }
 
 .answer-section {
