@@ -3,7 +3,6 @@
 }
 
 .App-logo {
-
   /* height: 10vmin;
   position: absolute;
   top: 0;
@@ -11,6 +10,7 @@
   pointer-events: none; */
   height: 15vmin;
   text-align: left;
+  padding-bottom: 3%;
   pointer-events: none;
 }
 
@@ -30,34 +30,35 @@
 }
 
 .question-text {
-    height: 70px;
-    width: 500px;
-    padding: 10px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease-in-out;
+  height: 70px;
+  width: 500px;
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
 
-
+.Title {
+  font-size: 35px;
 }
 
 .next-question {
   padding: 10px 20px;
   margin-top: 20px;
-
 }
 
 .question-count {
-  padding-top: 20%;
+  padding-top: 10%;
   padding-bottom: 10%;
 }
 
@@ -66,24 +67,19 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-
 }
 
 .correct {
-  background-color: greenyellow;
-
+  background-color: greenyellow !important;
 }
 
 .incorrect {
-  background-color: red;
-
-
+  background-color: white !important;
 }
 
 .is-correct {
   padding-top: 9%;
 }
-
 
 .Button {
   /* background-color:; */
