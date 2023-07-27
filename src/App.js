@@ -14,6 +14,8 @@ function App() {
     setIsAnswerCorrect(isCorrect);
     if (isCorrect) {
       setScore(score + 10);
+    } else {
+      setScore(score - 5);
     }
   };
 
@@ -26,6 +28,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        {score === Question.length - 1 && score > Question.length - 1 * 0.69}
         <img src={image} className="App-logo" alt="logo" />
         <div className="Title">Financial One Literacy</div>
         <div className="score-section">

@@ -29,8 +29,8 @@
   color: #d22e1e;
 }
 
-.score-section{
-  
+.score-section {
+  padding-top: 2%;
 }
 
 .question-text {
@@ -54,6 +54,8 @@
 
 .Title {
   font-size: 35px;
+  font-weight: 600;
+  color: #004879;
 }
 
 .next-question {
