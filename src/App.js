@@ -28,7 +28,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {score === Question.length - 1 && score > Question.length - 1 * 0.69}
+        {currentQuestionIndex === Question.length - 1 &&
+          currentQuestionIndex > Question.length - 1 * 0.69 && <>Nice Job!!</>}
         <img src={image} className="App-logo" alt="logo" />
         <div className="Title">Financial One Literacy</div>
         <div className="score-section">
@@ -43,7 +44,7 @@ function App() {
           <div className="question-text">{currentQuestion.question}</div>
           <div className="is-correct">
             {isAnswerCorrect !== null && (
-              <span>
+              <>
                 {isAnswerCorrect ? (
                   <h2>Correct</h2>
                 ) : (
@@ -57,7 +58,7 @@ function App() {
                     </p>
                   </>
                 )}
-              </span>
+              </>
             )}
           </div>
         </div>

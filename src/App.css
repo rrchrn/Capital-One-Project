@@ -8,20 +8,21 @@
   top: 0;
   left: 0;
   pointer-events: none; */
-  height: 15vmin;
+  height: 13vmin;
   text-align: left;
-  padding-bottom: 3%;
+  padding-bottom: 2%;
   pointer-events: none;
 }
 
 .App-header {
+  /* background-color: white; */
   background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: black;
 }
 
@@ -34,7 +35,7 @@
 }
 
 .question-text {
-  height: 70px;
+  height: 70;
   width: 500px;
   padding: 10px;
   border: 1px solid black;
@@ -64,8 +65,8 @@
 }
 
 .question-count {
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .answer-section {
@@ -84,7 +85,7 @@
 }
 
 .is-correct {
-  padding-top: 9%;
+  padding-top: 0rem;
 }
 
 .Button {
@@ -111,6 +112,7 @@ p.mediumText {
   font-size: 1em;
 }
 p.largeText {
-  font-size: 1.5em;
+  font-size: 1.1em;
+  font-weight: 777;
   color: red;
 }
