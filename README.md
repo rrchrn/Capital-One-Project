@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Preview [Link](http://boundless-pig.surge.sh)
+[Preview Link](http://boundless-pig.surge.sh)
 
 ## Available Scripts
 
