@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[Preview Link](http://boundless-pig.surge.sh)
+[Demo Link](http://boundless-pig.surge.sh)
 
 ![Capital-One](https://github.com/rrchrn/Capital-One-Project/assets/98070947/7618bdbe-702b-446a-ba5b-88710126c544)
 
